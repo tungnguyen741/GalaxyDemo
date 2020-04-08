@@ -1,0 +1,13 @@
+.header{
+	background: #f7f9fa;
+}
+.btn_search{
+ 	right: 0;
+ 	top: 2px;
+}
+.btn_search:focus{
+	outline: none;
+}
+.header_search{
+	width:260px
+}
