@@ -109,13 +109,15 @@ a.carousel-control-prev {
 .com3 a {
     text-transform: uppercase;
     color: #999;
-    margin-right: 39px;
     padding: 10px 0;
     border-bottom: 1px solid #eee;
     font-size: 20px;
 }
 .com3 {
     margin-top: 11px;
+}
+.com3 div:first-child {
+    margin-bottom: 15px;
 }
 .com3 .active_com3 {
     border-bottom: 2px solid #f26b38;
@@ -162,6 +164,7 @@ span.underline_com3 {
 }
 .com4_r_mid {
     display: flex;
+    white-space: nowrap;
 }
 .like, .view {
     margin-right: 2%;
@@ -230,11 +233,11 @@ span.underline_com4 {
     background: #111;
     opacity: 0;
 }
-.com4.align-items-center:hover .overlay_com4 {
+.com4:hover .overlay_com4 {
     transition: 0.5s all;
     opacity: 0.5;
 }
-.com4.align-items-center:hover .com4_right h5 {
+.com4:hover .com4_right h5 {
     transition: 0.5s all;
     color: #f26b38
 }
@@ -302,7 +305,7 @@ a.detail_com5 {
     font-size: 0.8rem;
     text-transform: uppercase;
     transition: 0.5s all;
-     padding-top: 7px;
+    padding-top: 7px;
 }
 .footer_content a:hover {
     color: #f26b38;
@@ -311,11 +314,15 @@ li.footer_icon a {
     font-size: 1.7rem;
     margin-right: 10px;
 }
-.line_footer{
-	background: #484848;
+.line_footer {
+    background: #484848;
 }
-.container.footer_end i{
-	color: #999;
+.container.footer_end i {
+    color: #999;
+    font-size: 0.9rem;
+}
+.container.footer_end div {
+    place-content: space-between;
 }
 @media screen and (max-width: 1200px) {
     .sub_menu_detail {
@@ -324,43 +331,44 @@ li.footer_icon a {
     ul.sub_menu1 {
         width: 300px;
     }
-    @media screen and (max-width: 768px) {
-        .navbar-light .navbar-toggler {
-            position: relative;
-            left: 95%;
-            bottom: 50px;
-        }
-        .com2_bg {
-            background: #FFF !important
-        }
-        div#navbarSupportedContent {
-            background: #333 !important;
-            position: relative;
-            bottom: 47px;
-            z-index: 111;
-        }
-        ul li:last-child {
-            border: initial;
-        }
-        ul.sub_menu1 {
-            width: 100%;
-            text-align: center;
-            position: relative;
-            top: 0;
-        }
-        nav.navbar.navbar-expand-lg.navbar-light.bg-transparent {
-            height: ;
-            height: 0px;
-            padding: 0;
-        }
+}
+@media screen and (max-width: 768px) {
+    .navbar-light .navbar-toggler {
+        position: relative;
+        left: 95%;
+        bottom: 50px;
     }
-    @media screen and (max-width: 574px) {
-        .navbar-light .navbar-toggler {
-            position: relative;
-            left: 82%;
-            bottom: 52px;
-        }
-        div#navbarSupportedContent {
-            background: #333 !important;
-        }
+    .com2_bg {
+        background: #FFF !important
     }
+    div#navbarSupportedContent {
+        background: #333 !important;
+        position: relative;
+        bottom: 47px;
+        z-index: 111;
+    }
+    ul li:last-child {
+        border: initial;
+    }
+    ul.sub_menu1 {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: 0;
+    }
+    nav.navbar.navbar-expand-lg.navbar-light.bg-transparent {
+        height: ;
+        height: 0px;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 574px) {
+    .navbar-light .navbar-toggler {
+        position: relative;
+        left: 82%;
+        bottom: 52px;
+    }
+    div#navbarSupportedContent {
+        background: #333 !important;
+    }
+}
