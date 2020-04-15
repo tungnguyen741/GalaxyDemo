@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="vn">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -11,10 +11,13 @@
     <title>Galaxy cinema</title>
   </head>
   <body>
+
     <div class="header">
 		<div class="container ">
 			<div class="row align-items-center pt-3 pb-3 justify-content-between">
-				<div class="logo col-md-4 col-sm-4"><a href="#"><img class="w-100" src="./img/galaxy-logo.png" alt="logo"></a></div>
+				<div class="logo col-md-4 col-sm-4"><a href="#">
+					<img class="w-100" src="./img/galaxy-logo.png" alt="logo"></a>
+				</div>
 				<div class="col-md-4 d-md-block d-none ml-5 ">
 					<div class="header_search position-relative">
 						<form action="/">
@@ -23,8 +26,52 @@
 						</form>
 					</div>
 				</div>
-				<div class="sigin col-md-3 col-sm-6 col-12 pt-3 pt-sm-0 pt-md-0 text-center"><a href="/">Đăng nhập</a></div>
+				<div class="sigin col-md-3 col-sm-6 col-12 pt-3 pt-sm-0 pt-md-0 text-center"><a href="#" id="btn_signin">Đăng nhập</a></div>
 			</div>
+			<div class="blur_body"></div>
+		</div>
+		<div class="form_signin">
+			 	<div class="com3 row no-gutters  position-relative">
+				 <a class="title_signin active_sigin" href="#">đăng nhập</a> <span class="ml-3 mr-3 d-flex align-items-center">/</span>
+				 <a class="position-relative title_signup" href="#">đăng ký<span class="underline_com3"></span></a> 
+				 <p>Vui lòng đăng nhập trước khi mua vé để tích luỹ điểm, cơ hội nhận thêm nhiều ưu đãi từ chương trình thành viên Galaxy Cinema.</p>  
+			</div>
+			<form class="formSignin" action="/abc">
+				<input name="" type="text" class="w-100 mb-3 pt-1 pb-1 pl-2" placeholder="Email">
+				<input name="" type="password" class="w-100 pt-1 pb-1 pl-3" placeholder="Mật khẩu">
+				<div class="quenmatkhau mt-3 mb-3"><a href="#"  >quên mật khẩu?</a></div>
+				<button class="btn_sigin d-block text-center w-100 pt-2 pb-2">đăng nhập</button>
+			</form>
+
+			<div class="btn_close_signin position-absolute"><a href="#"><i class="fas fa-times"></i></a></div>
+		</div>
+		<div class="form_signup">
+			<form  class="formSignup" action="/bcd">
+				<input name="" type="text" class="w-100 mb-3 pt-1 pb-1 pl-2" placeholder="Họ tên">
+				 <div class="phoneAndSex d-flex justify-content-between">
+				 	<input name="" type="text" class="w-50 mb-3 pt-1 pb-1 pl-3" placeholder="số điện thoại">
+					 <select style="width: 47%;height: 36px " name="gioitinh" id="">
+					 	<option value="" disabled="disabled" selected="selected">chọn giới tính</option>
+					 	<option value="Nam">Nam</option>
+					 	<option value="Nu">Nữ</option>
+					 </select>
+				 </div>
+				 <input name="" type="text" class="w-100 mb-3 pt-1 pb-1 pl-2" placeholder="Email">
+				<div class="d-flex justify-content-between">
+					<input name="" type="password" class="w-50 mb-3 pt-1 pb-1 pl-2" placeholder="mật khẩu">
+				 	<input  style="width: 47%" name="" type="password" class="mb-3 pt-1 pb-1 pl-2" placeholder="xác nhận mật khẩu">
+				</div>
+				<div class="d-flex justify-content-between">
+					<select style="width: 47%;height: 36px " name="gioitinh" id="">
+					 	<option value="" disabled="disabled" selected="selected">Chọn thành phố</option>
+					 </select>
+				 	 <select style="width: 47%;height: 36px " name="gioitinh" id="">
+					 	<option value="" disabled="disabled" selected="selected">Quận</option>
+					 </select>
+				</div>
+				<div class="quenmatkhau mt-3 mb-3"><a href="#"  >quên mật khẩu?</a></div>
+				<button class="btn_sigin btn_sigup d-block text-center w-100 pt-2 pb-2">đăng kí</button>
+			</form>
 		</div>
 	</div> <!-- component1 -->
 	<div class="com2_bg bg-dark">
@@ -354,33 +401,41 @@
 							<a class="d-block"  href="#"><img src="https://galaxycine.vn/media/2019/12/9/300x450_1575874237175.jpg" alt="" class="w-100 h-100"></a>
 							<div class="overlay_com4 overlay_com5"></div> 
 							<div class="overlay_com5_2"> <a href="#">tưng bừng hái "sao", nhận ưu đãi khủng <br> ra mắt hệ thống tích điểm thành viên hoàn toàn mới</a></div>
-							 <a class="detail_com5" href="#" >chi tiết</a> 
+							<div class="overlay_com5_bot">
+								<a class="detail_com5" href="#" >chi tiết</a> 
+							</div>
 						</div>
 					</div>
 				 <div class="col-md-3 col-6 "> 
 								<div class="com5_inside img_com5 position-relative d-block">
 									<a class="d-block"  href="#"><img src="https://galaxycine.vn/media/2020/2/27/300x450_1582773542863.jpg" alt="" class="w-100 h-100"></a>
 									<div class="overlay_com4 overlay_com5"></div> 
-									<div class="overlay_com5_2"> <a href="#">tưng bừng hái "sao", nhận ưu đãi khủng</a></div>
-									 <a class="detail_com5" href="#" >chi tiết</a> 
-								</div>
+							<div class="overlay_com5_2"> <a href="#">tưng bừng hái "sao", nhận ưu đãi khủng <br> ra mắt hệ thống tích điểm thành viên hoàn toàn mới</a></div>
+							<div class="overlay_com5_bot">
+								<a class="detail_com5" href="#" >chi tiết</a> 
 							</div>
+						</div>
+					</div>
 				 <div class="col-md-3 col-6 "> 
 								<div class="com5_inside img_com5 position-relative d-block">
 									<a class="d-block"  href="#"><img src="https://galaxycine.vn/media/2019/9/30/300x450-80-1569464713921_1569830041346.jpg" alt="" class="w-100 h-100"></a>
 									<div class="overlay_com4 overlay_com5"></div> 
-									<div class="overlay_com5_2"> <a href="#">tưng bừng hái "sao", nhận ưu đãi khủng</a></div>
-									 <a class="detail_com5" href="#" >chi tiết</a> 
-								</div>
+							<div class="overlay_com5_2"> <a href="#">tưng bừng hái "sao", nhận ưu đãi khủng <br> ra mắt hệ thống tích điểm thành viên hoàn toàn mới</a></div>
+							<div class="overlay_com5_bot">
+								<a class="detail_com5" href="#" >chi tiết</a> 
 							</div>
+						</div>
+					</div>
 				 <div class="col-md-3 col-6 "> 
 								<div class="com5_inside img_com5 position-relative d-block">
 									<a class="d-block"  href="#"><img src="https://galaxycine.vn/media/2019/10/11/300x450_1570766652733.jpg" alt="" class="w-100 h-100">  </a>
 									<div class="overlay_com4 overlay_com5"></div> 
-									<div class="overlay_com5_2"> <a href="#">tưng bừng hái "sao", nhận ưu đãi khủng</a></div>
-									 <a class="detail_com5" href="#" >chi tiết</a> 
-								</div>
+							<div class="overlay_com5_2"> <a href="#">tưng bừng hái "sao", nhận ưu đãi khủng <br> ra mắt hệ thống tích điểm thành viên hoàn toàn mới</a></div>
+							<div class="overlay_com5_bot">
+								<a class="detail_com5" href="#" >chi tiết</a> 
 							</div>
+						</div>
+					</div>
 				</div>
  			</div>	
  			<!--com6 -->
@@ -479,5 +534,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

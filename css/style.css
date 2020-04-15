@@ -125,7 +125,7 @@ a.carousel-control-prev {
 }
 .com3 a:hover {
     text-decoration: none;
-    color: #333;
+
     transition: 0.5s all;
 }
 span.underline_com3 {
@@ -245,14 +245,22 @@ span.underline_com4 {
     opacity: 0.8;
     transition: 0.5s all;
 }
-.overlay_com5_2 a {
+.overlay_com5_2 {
     position: absolute;
-    top: 10%;
-    left: 5%;
+    padding: 5%;
+    top: 0
+}
+.overlay_com5_2 a {
     color: #fff;
     font-weight: 500;
     text-transform: uppercase;
     opacity: 0;
+}
+.overlay_com5_bot {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
 }
 a.detail_com5 {
     color: #fff;
@@ -260,9 +268,6 @@ a.detail_com5 {
     padding: 10px 25px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    position: absolute;
-    bottom: 5%;
-    left: 25%;
     visibility: hidden;
     opacity: 0;
 }
@@ -323,6 +328,100 @@ li.footer_icon a {
 }
 .container.footer_end div {
     place-content: space-between;
+}
+span.ml-3.mr-3.d-flex.align-items-center {
+    font-size: 25px;
+    color: #999;
+}
+.com3 .active_sigin {
+    border-bottom: 2px solid #f26b38;
+    color: #f26b38;
+}
+.com3 .title_signup:hover {
+    color: #f26b38;
+}
+.form_signin {
+    width: 460px;
+    height: 360px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: -100%;
+    z-index: 10;
+    margin-left: -230px;
+    padding: 10px 35px 0 35px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s all;
+}
+.form_signup{
+    width: 460px;
+    height: 660px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+    margin-left: -230px;
+    padding: 10px 35px 0 35px;
+    visibility: hidden;
+    opacity: 0;
+ 
+}
+.show_form_sigup{
+    opacity: 1;
+    visibility: visible;
+    top: 20%;
+    z-index: 30;
+
+}
+.form_signin p {
+    color: #999;
+    font-size: 13px;
+    margin-top: 15px;
+}
+.btn_sigin {
+    background: #f26b38;
+    color: #fff;
+    text-transform: uppercase;
+    border: 0;
+}
+.btn_sigin:hover {
+    background: #cc4714;
+    color: #fff
+}
+.show_form_sigin {
+    visibility: visible;
+    opacity: 1;
+    top: 5%;
+}
+.blur_body {
+    opacity: 0.5;
+    background: black;
+}
+.btn_close_signin {
+    top: 3%;
+    right: 10%;
+    font-size: 2rem;
+}
+.btn_close_signin i {
+    color: #ddd;
+}
+.blur_body {
+    opacity: 0;
+    background: #000;
+    width: 100%;
+    height: 5000px;
+    z-index: 2;
+    position: fixed;
+    transition: 0.3s all;
+    visibility: hidden;
+    top: 0;
+    left: 0
+}
+.show_blur_body {
+    opacity: 0.5;
+    visibility: visible;
 }
 @media screen and (max-width: 1200px) {
     .sub_menu_detail {
