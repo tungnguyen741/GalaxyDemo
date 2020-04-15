@@ -4,6 +4,9 @@ a:hover {
 a {
     color: #000;
 }
+body {
+    width: 100%;
+}
 .header {
     background: #f7f9fa;
 }
@@ -348,7 +351,7 @@ span.ml-3.mr-3.d-flex.align-items-center {
     top: -100%;
     z-index: 10;
     margin-left: -230px;
-    padding: 10px 35px 0 35px;
+    padding: 10px 20px 0 20px;
     visibility: hidden;
     opacity: 0;
     transition: 0.5s all;
@@ -362,7 +365,7 @@ span.ml-3.mr-3.d-flex.align-items-center {
     top: 50%;
     z-index: 10;
     margin-left: -230px;
-    padding: 10px 35px 0 35px;
+    padding: 10px 20px 0 20px;
     visibility: hidden;
     opacity: 0;
 }
@@ -420,7 +423,7 @@ span.ml-3.mr-3.d-flex.align-items-center {
 .show_blur_body {
     opacity: 0.5;
     visibility: visible;
-    z-index: 10;
+    z-index: 17;
 }
 @media screen and (max-width: 1200px) {
     .sub_menu_detail {
@@ -470,8 +473,8 @@ span.ml-3.mr-3.d-flex.align-items-center {
         background: #333 !important;
     }
     .form_signin, .form_signup {
-        width: 400px;
-        margin-left: -200px;
+        width: 94%;
+        margin-left: -47%;
         z-index: 35;
     }
 }
