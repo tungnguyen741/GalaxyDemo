@@ -369,7 +369,7 @@ span.ml-3.mr-3.d-flex.align-items-center {
 .show_form_sigup {
     opacity: 1;
     visibility: visible;
-    top: 20%;
+    top: 130px;
     z-index: 40;
 }
 .form_signin p {
