@@ -420,6 +420,7 @@ span.ml-3.mr-3.d-flex.align-items-center {
 .show_blur_body {
     opacity: 0.5;
     visibility: visible;
+    z-index: 10;
 }
 @media screen and (max-width: 1200px) {
     .sub_menu_detail {

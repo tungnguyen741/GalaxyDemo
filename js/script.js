@@ -10,6 +10,7 @@ $(function(){
 		 $('.form_signin p').css({
 			display: 'block'
 		});
+		 $('.navbar-collapse').removeClass('show');
 		 event.presentDefault();
 	});
 	$(".btn_close_signin ,.blur_body").click(function(e) {
